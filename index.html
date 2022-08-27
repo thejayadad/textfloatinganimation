@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           body {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            font-family: cursive;
+            background: black;
+            color: white;
+        }
+        .text-box{
+            font-size: 30px;
+        
+        }
+        span {
+            animation: move 6s linear infinite;
+            display: inline-block;
+            font-weight: bolder;
+            color: orangered;
+        }
+        @keyframes move
+{
+    0%{
+        text-shadow: 0 0 60px rgba(0, 0, 0, 0);
+      }
+    50%{
+        text-shadow: 0 0 60px rgba(0, 0, 0, 0.30);
+        transform: translateY(60px);
+      }
+    100%
+      {
+        text-shadow: 0 0 60px rgba(0, 0, 0, 0);
+      }
+}
+        span:nth-child(1){
+            animation-delay: .5s;
+        }
+        span:nth-child(2){
+            animation-delay: 1s;
+        }
+        span:nth-child(3){
+            animation-delay: 1.5s;
+        }
+        span:nth-child(4){
+            animation-delay: 2s;
+        }
+        span:nth-child(5){
+            animation-delay: 2.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-box">
+        <span>H</span>
+        <span>E</span>
+        <span>L</span>
+        <span>L</span>
+        <span>O</span>
+
+    </div>
+</body>
+</html>
